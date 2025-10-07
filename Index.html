@@ -18,14 +18,13 @@
     <script src="/main.js"></script>
     <link rel="icon" type="image/png" href="/src/ghost.png" />
   </head>
-  <body>
-    <h1 class="text-center">CALCULADORA</h1>
+  <body style="background-image: url(/src/backgroundBlack.png);">
+    <h1 class="text-center" style="color: aliceblue;">CALCULADORA</h1>
     <div class="container mt-4">
       <div
         class="input-group input-group-lg col-6 mb-4 mx-auto"
         style="max-width: 420px"
       >
-       
         <input
           id="display"
           disabled
@@ -36,10 +35,13 @@
         />
       </div>
       <div class="row g-1 col-2 mb-2 mx-auto">
+        <button type="button" class="btn btn-outline-danger mb-2" onclick="DeleteAll()">
+          Clear
+        </button>
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-light w-100"
             id="num"
             value="7"
             onclick="NumeroPresente('7')"
@@ -50,7 +52,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-light w-100"
             id="num"
             value="8"
             onclick="NumeroPresente('8')"
@@ -61,7 +63,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-light w-100"
             id="num"
             value="9"
             onclick="NumeroPresente('9')"
@@ -72,7 +74,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-warning w-100"
             id="Division"
             onclick="OperadorFun('/')"
           >
@@ -84,7 +86,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-light w-100"
             id="num"
             value="4"
             onclick="NumeroPresente('4')"
@@ -95,7 +97,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-light w-100"
             id="num"
             value="5"
             onclick="NumeroPresente('5')"
@@ -106,7 +108,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-light w-100"
             id="num"
             value="6"
             onclick="NumeroPresente('6')"
@@ -117,7 +119,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-warning w-100"
             id="Multiplicacion"
             onclick="OperadorFun('*')"
           >
@@ -129,7 +131,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-light w-100"
             id="num"
             value="1"
             onclick="NumeroPresente('1')"
@@ -140,7 +142,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-light w-100"
             id="num"
             value="2"
             onclick="NumeroPresente('2')"
@@ -151,7 +153,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-light w-100"
             id="num"
             value="3"
             onclick="NumeroPresente('3')"
@@ -162,7 +164,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-warning w-100"
             id="Resta"
             onclick="OperadorFun('-')"
           >
@@ -174,7 +176,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-light w-100"
             id="num"
             value="0"
             onclick="NumeroPresente('0')"
@@ -185,7 +187,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-light w-100"
             id="punto"
           >
             .
@@ -194,7 +196,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-success w-100"
             id="Igual"
             onclick="Operacion()"
           >
@@ -204,7 +206,7 @@
         <div class="col-3">
           <button
             type="button"
-            class="btn btn-outline-primary w-100"
+            class="btn btn-outline-warning w-100"
             id="Suma"
             onclick="OperadorFun('+')"
           >
