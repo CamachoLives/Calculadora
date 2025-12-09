@@ -25,7 +25,6 @@ function OperadorFun(Operacion) {
   }
 }
 
-
 function Operacion() {
   let Anterior = parseFloat(NumeroAnterior);
   let Actual = parseFloat(NumeroActual);
