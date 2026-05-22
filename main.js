@@ -3,13 +3,14 @@ let NumeroAnterior = "";
 let Operador = null;
 let Resultado = null;
 
+
 function NumeroPresente(Valor) {
   NumeroActual += Valor;
   ActualizarDisplay(NumeroActual);
 }
 
 function ActualizarDisplay(Valor) {
-  document.getElementById("display").value = Valor;
+  document.getElementById("displaaaaaaay").value = Valor;
 }
 
 function OperadorFun(Operacion) {
