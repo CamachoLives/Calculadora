@@ -10,7 +10,7 @@ function NumeroPresente(Valor) {
 }
 
 function ActualizarDisplay(Valor) {
-  document.getElementById("displasdsaasssasawsy").value = Valor;
+  document.getElementById("displaay").value = Valor;
 }
 
 function OperadorFun(Operacion) {
